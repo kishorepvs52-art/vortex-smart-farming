@@ -1,4 +1,5 @@
-export const API_BASE = '/api/v1';
+```ts
+export const API_BASE = `${import.meta.env.VITE_API_URL}/api/v1`;
 
 export const MAX_UPLOAD_MB = 8;
 export const ACCEPTED_TYPES = ['image/jpeg', 'image/png', 'image/webp'] as const;
@@ -15,3 +16,4 @@ export const DEMO_ACCOUNTS = [
   { role: 'Expert', email: 'expert@vortex.app', password: 'Expert@1234', desc: 'Dr. Meera Krishnan · Plant Pathology' },
   { role: 'Admin', email: 'admin@vortex.app', password: 'Admin@1234', desc: 'Arjun Nair · Platform Admin' },
 ] as const;
+```
